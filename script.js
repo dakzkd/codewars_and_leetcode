@@ -77,23 +77,79 @@
 // For the purposes of this kata, some tests may have multiple answers; any valid solutions will be accepted.
 
 // The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
-function twoSum(numbers, target) {
-    // ...
-    if(numbers.length > 0 && target) {
+// function twoSum(numbers, target) {
+//     // ...
+//     if(numbers.length > 0 && target) {
 
-        for(let i =0 ; i<numbers.length; i++) {
-            let sum = 0
-            for(let j = i+1; j< numbers.length; j++) {
-                sum=  numbers[i] + numbers[j]
-               if(sum === target) return [i, j];
-            }
+//         for(let i =0 ; i<numbers.length; i++) {
+//             let sum = 0
+//             for(let j = i+1; j< numbers.length; j++) {
+//                 sum=  numbers[i] + numbers[j]
+//                if(sum === target) return [i, j];
+//             }
     
-        }
-    } else {
-        return [0,0];
-    }
-  }
+//         }
+//     } else {
+//         return [0,0];
+//     }
+//   }
 
-  console.log(twoSum([1,2,3,4], 7));
+//   console.log(twoSum([1,2,3,4], 7));
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//                               4                              //
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////
+// The main idea is to count all the occurring characters in a string. If you have a string like aba, then the result should be {'a': 2, 'b': 1}.
+
+// What if the string is empty? Then the result should be empty object literal, {}.
+
+// function count (string) {  
+    //     // The function code should be here
+    //     if (!string) return {};
+    //     let countObj = {};
+    //     const arrOfStr = string.split('');
+    //     const setOfStr = new Set(arrOfStr);
+    //     console.log(setOfStr);
+    //     setOfStr.forEach(el => {
+        //         countObj[el] = 0;
+        //         for(let i of arrOfStr) {
+            //             if(el ===i ) {
+                //                 countObj[el]++;
+                //             }
+                //         }
+                //     })
+                
+                //     return countObj
+                
+                
+                //   }
+                
+                //   console.log(count('abaa'));
+            
+                
+
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//                            5                                 //
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+// Implement a method that accepts 3 integer values a, b, c. The method should return true if a triangle can be built with the sides of given length and false in any other case.
+
+// (In this case, all triangles must have surface greater than 0 to be accepted).
+
+// function isTriangle(a,b,c) {
+//     return a+b > c && a+c > b && b+c >a; 
+// }
+
+// console.log(isTriangle(1,2,2));
+// console.log(isTriangle(7,2,2));
 
 
